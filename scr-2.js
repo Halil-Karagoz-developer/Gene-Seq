@@ -6,19 +6,19 @@ const val = ["UUU","CUG","AUC","AUG","GUC","UCG","CCG","ACC","GCG","UAC","CAU","
 
 
 
+
 button_send.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(inputTextbox.value);
+    showData.textContent = " "
     for(let i = 0; i < inputTextbox.value.length;i++){
         for(let k = 0; k <key.length;k++){
             if( key[k] == inputTextbox.value[i]){
-                showData.textContent += val[i] + " ";
-                
+                showData.textContent += val[k] + " ";
             }
         }
     }
+console.log("output: ",showData.textContent)
     
-    console.log(typeof inputTextbox.value);
     
     // showData.append()
 })
