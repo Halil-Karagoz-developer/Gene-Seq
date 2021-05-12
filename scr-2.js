@@ -17,9 +17,7 @@ button_send.addEventListener("click", (e) => {
             }
         }
     }
-console.log("output: ",showData.textContent)
-    
-    
+
     // showData.append()
 })
 
